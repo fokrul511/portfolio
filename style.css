@@ -1,10 +1,77 @@
 *{
     margin: 0;
-    padding:0 ;
-    
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 body{
-    background: url(image/bg.jpg);
-    background-position: center;
+    height: 100vh;
+    background-color:rgb(255, 255,255,0.5);
+    backdrop-filter: blur(3px);
+    background-image: url(image/bg.jpg);
     background-size: cover;
+    background-position: center;
+
+}
+
+li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+a:hover{
+    color: orange;
+}
+/* head */
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+.navber{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navber .logo a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navber .links{
+    display: flex;
+    gap: 2rem;
+}
+.navber .toggle_button{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.action_button{
+    background-color: orange;
+    color: white;
+    padding: 0.5rem 1rem;
+    order: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2 ease;
+
+}
+.action_button:hover{
+    scale: 1.05;
+    color: white;
+}
+.action_button:active{
+    scale: 0.95;
 }
